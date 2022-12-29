@@ -1,18 +1,13 @@
 {
-  "name": "toastify-js",
+  "name": "toastify",
+  "private": true,
   "version": "1.12.0",
-  "description":
-    "Toastify is a lightweight, vanilla JS toast notification library.",
-  "main": "./src/toastify.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/apvarun/toastify-js.git"
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
   },
-  "keywords": ["toastify", "javascript", "notifications", "toast"],
-  "author": "Varun A P",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/apvarun/toastify-js/issues"
-  },
-  "homepage": "https://github.com/apvarun/toastify-js#readme"
+  "devDependencies": {
+    "vite": "^4.0.0"
+  }
 }
