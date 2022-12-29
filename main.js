@@ -1,4 +1,5 @@
 import Toastify from './lib/toastify-es';
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const toast = Toastify({
     text: "This is a toast   ",
@@ -10,13 +11,16 @@ const toast = Toastify({
     style: {
         background: "rgb(25,135,84)",
         fontSize: '1.5em',
-        borderRadius: '10px',
-        boxShadow: '4px -4px 8px 1px rgba(0,0,0,0.35)'
+        borderRadius: '6px',
+        boxShadow: '3px -3px 8px 1px rgba(0,0,0,0.20)',
     },
+    avatar: 'bi-heart',
     offset: {
         x: 20,
         y: 20
     }
 });
 
-toast.showToast();
+setInterval(() => {
+    toast.showToast();
+}, 500);
