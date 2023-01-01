@@ -32,10 +32,15 @@
     border: 0;
     color: white;
     cursor: pointer;
-    font-family: inherit;
+    font-family: none;
     font-size: 1em;
     opacity: 0.4;
     padding: 0 5px;
+    transition: opacity 0.2s ease;
+}
+
+.toast-close:hover {
+    opacity: 0.8;
 }
 
 .toastify-right {
@@ -75,7 +80,8 @@
 }
 
 @media only screen and (max-width: 360px) {
-    .toastify-right, .toastify-left {
+    .toastify-right,
+    .toastify-left {
         margin-left: auto;
         margin-right: auto;
         left: 0;

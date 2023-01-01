@@ -21,6 +21,6 @@ const toast = Toastify({
     }
 });
 
-setInterval(() => {
-    toast.showToast();
-}, 500);
+
+toast.showToast();
+
