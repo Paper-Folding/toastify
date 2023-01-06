@@ -7,7 +7,7 @@
  */
 
 .toastify {
-    padding: 12px 20px;
+    padding: 12px 20px 12px 16px;
     color: #ffffff;
     display: inline-block;
     box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12), 0 10px 36px -4px rgba(77, 96, 232, 0.3);
@@ -66,7 +66,7 @@
 .toastify-avatar {
     width: 1.5em;
     height: 1.5em;
-    margin: -7px 5px;
+    margin: -7px 10px -7px 0;
     border-radius: 2px;
 }
 
@@ -79,7 +79,7 @@
     max-width: -moz-fit-content;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 576px) {
     .toastify-right,
     .toastify-left {
         margin-left: auto;

@@ -40,7 +40,7 @@ function showToast(text = "", duration = 3000, preset = null, { iconClassName = 
                 break;
             case 'danger':
                 presetStyle = {
-                    iconClassName: 'bi-x-lg',
+                    iconClassName: 'bi-x-circle',
                     background: '#f8d7da',
                     border: '1px solid #f1aeb5',
                     fontColor: '#b02a37'
@@ -59,16 +59,12 @@ function showToast(text = "", duration = 3000, preset = null, { iconClassName = 
         style: {
             color: styleToApply.fontColor,
             background: styleToApply.background,
-            fontSize: '1.5em',
+            fontSize: '1.1em',
             borderRadius: '6px',
             border: styleToApply.border,
             boxShadow: 'rgb(0 0 0 / 10%) 2px -2px 5px 2px',
         },
         avatar: styleToApply.iconClassName,
-        offset: {
-            x: 20,
-            y: 20
-        }
     }).showToast();
 }
 
