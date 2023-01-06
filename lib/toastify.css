@@ -30,17 +30,17 @@
 .toast-close {
     background: transparent;
     border: 0;
-    color: white;
+    color: inherit;
     cursor: pointer;
     font-family: none;
     font-size: 1em;
-    opacity: 0.4;
-    padding: 0 5px;
+    opacity: 0.5;
+    padding: 0 0 0 15px;
     transition: opacity 0.2s ease;
 }
 
 .toast-close:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .toastify-right {
