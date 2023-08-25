@@ -4,8 +4,9 @@
   "version": "1.12.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "dev": "vite --config ./config/vite.config.dev.js",
+    "build-lib": "vite build --config ./config/vite.config.build-lib.js",
+    "build-example": "vite build --config ./config/vite.config.build-example.js"
   },
   "devDependencies": {
     "vite": "^4.0.0"
