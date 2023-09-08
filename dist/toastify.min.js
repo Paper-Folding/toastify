@@ -1,4 +1,4 @@
-/*! Toastify js 1.12.3
+/*! Toastify js 1.12.4
  * https://github.com/Paper-Folding/toastify
  * @license MIT licensed
  * 
