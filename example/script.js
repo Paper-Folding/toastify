@@ -1,4 +1,4 @@
-import Toastify from '../lib/toastify-es';
+import Toastify from '../src/toastify';
 
 var bgColors = [
     "linear-gradient(to right, #00b09b, #96c93d)",

@@ -5,7 +5,7 @@ import { defineConfig } from "vite";
 export default defineConfig({
     build: {
         lib: {
-            entry: resolve(__dirname, '../lib/toastify-es.js'),
+            entry: resolve(__dirname, '../src/toastify.js'),
             name: 'Toastify',
             fileName: 'toastify-es',
             formats: ['umd'],

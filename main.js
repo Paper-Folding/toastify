@@ -1,4 +1,4 @@
-import Toastify from './lib/toastify-es';
+import Toastify from './src/toastify';
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 /**
