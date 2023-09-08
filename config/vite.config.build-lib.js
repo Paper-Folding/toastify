@@ -28,13 +28,12 @@ export default defineConfig({
  * https://github.com/Paper-Folding/toastify
  * @license MIT licensed
  * 
- * Copyright (C) 2018 Varun A P
+ * Copyright (C) 2023 P F
  */
 `;
                         for (const module of Object.values(bundle)) {
-                            if (module.type === 'chunk') {
-                                module.code = banner + module.code;
-                            }
+                            if (module.type === "chunk") module.code = banner + module.code;
+                            else module.source = banner + module.source;
                         }
                     }
                 }

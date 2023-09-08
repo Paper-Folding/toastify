@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/Paper-Folding/toastify.git"
   },
-  "version": "1.12.2",
+  "version": "1.12.3",
   "type": "module",
   "scripts": {
     "dev": "vite --config ./config/vite.config.dev.js",
@@ -16,9 +16,7 @@
     "build-example": "vite build --config ./config/vite.config.build-example.js"
   },
   "devDependencies": {
+    "bootstrap-icons": "^1.10.3",
     "vite": "^4.0.0"
-  },
-  "dependencies": {
-    "bootstrap-icons": "^1.10.3"
   }
 }
