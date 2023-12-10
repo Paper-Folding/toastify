@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/Paper-Folding/toastify.git"
   },
-  "version": "1.12.5",
+  "version": "1.12.6",
   "type": "module",
   "scripts": {
     "dev": "vite --config ./config/vite.config.dev.js",

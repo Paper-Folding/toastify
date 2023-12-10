@@ -51,13 +51,6 @@ class Toastify {
 
   constructor(options) {
     /**
-     * The version of Toastify
-     * @type {string}
-     * @public
-     */
-    this.version = "1.12.0";
-
-    /**
      * The configuration object to configure Toastify
      * @type {ToastifyConfigurationObject}
      * @public
