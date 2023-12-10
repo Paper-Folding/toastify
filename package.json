@@ -2,13 +2,14 @@
   "name": "@paper-folding/toastify",
   "description": "Dom Notification",
   "author": "Paper Folding",
+  "main": "./src/toastify.js",
   "license": "MIT",
   "homepage": "https://github.com/Paper-Folding/toastify",
   "repository": {
     "type": "git",
     "url": "https://github.com/Paper-Folding/toastify.git"
   },
-  "version": "1.12.4",
+  "version": "1.12.5",
   "type": "module",
   "scripts": {
     "dev": "vite --config ./config/vite.config.dev.js",
@@ -18,5 +19,9 @@
   "devDependencies": {
     "bootstrap-icons": "^1.10.3",
     "vite": "^5.0.7"
-  }
+  },
+  "files": [
+    "src/*",
+    "dist/*"
+  ]
 }

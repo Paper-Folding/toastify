@@ -26,9 +26,7 @@ export default defineConfig({
                     generateBundle(options, bundle) {
                         const banner = `/*! Toastify js ${process.env.npm_package_version}
  * https://github.com/Paper-Folding/toastify
- * @license MIT licensed
- * 
- * Copyright (C) 2023 P F
+ * @license MIT licensed 
  */
 `;
                         for (const module of Object.values(bundle)) {
