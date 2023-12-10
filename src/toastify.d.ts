@@ -6,51 +6,51 @@ declare namespace StartToastifyInstance {
     }
 
     interface Options {
-        text?: string | undefined;
-        node?: Node | undefined;
-        duration?: number | undefined;
-        selector?: string | Node | undefined;
-        destination?: string | undefined;
-        newWindow?: boolean | undefined;
-        close?: boolean | undefined;
-        gravity?: "top" | "bottom" | undefined;
-        position?: "left" | "center" | "right" | undefined;
+        text?: string;
+        node?: Node;
+        duration?: number;
+        selector?: string | Node;
+        destination?: string;
+        newWindow?: boolean;
+        close?: boolean;
+        gravity?: "top" | "bottom";
+        position?: "left" | "center" | "right";
         /**
          * Announce the toast to screen readers
          * @default 'polite'
          */
-        ariaLive?: "off" | "polite" | "assertive" | undefined;
+        ariaLive?: "off" | "polite" | "assertive";
         /**
          * @deprecated use style.background option instead
          */
-        backgroundColor?: string | undefined;
+        backgroundColor?: string;
         /**
          * Image/icon to be shown before text
          */
-        avatar?: string | undefined;
-        className?: string | undefined;
+        avatar?: string;
+        className?: string;
         /**
          * @default true
          */
-        stopOnFocus?: boolean | undefined;
+        stopOnFocus?: boolean;
         /**
          * Invoked when the toast is dismissed
          */
-        callback?: (() => void) | undefined;
-        onClick?: (() => void) | undefined;
-        offset?: Offset | undefined;
+        callback?: (() => void);
+        onClick?: (() => void);
+        offset?: Offset;
         /**
          * Toggle the default behavior of escaping HTML markup
          */
-        escapeMarkup?: boolean | undefined;
+        escapeMarkup?: boolean;
         /**
          * HTML DOM Style properties to add any style directly to toast
          */
-        style?: { [cssRule: string]: string };
+        style?: Partial<CSSStyleDeclaration>;
         /**
          * Set the order in which toasts are stacked in page
          */
-        oldestFirst?: boolean | undefined;
+        oldestFirst?: boolean;
     }
 }
 
