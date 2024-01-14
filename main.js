@@ -73,6 +73,6 @@ showToast("I just want to notify you.", -1, 'primary');
 showToast("Hello World!", -1, 'success');
 showToast("Hello World!", -1, 'success', { iconClassName: 'bi-heart' });
 
-showToast("Ow man, what are you doing?", -1, 'warning');
+showToast("Ow man, what are you doing? What are you doing? are you doing? you doing? doing? ing?", -1, 'warning');
 showToast("Get out of there quickly!", -1, 'danger');
 
