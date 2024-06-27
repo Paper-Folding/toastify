@@ -1,4 +1,4 @@
-import Toastify from './src/toastify';
+import Toastify from "./src/toastify";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 /**
@@ -10,41 +10,41 @@ import "bootstrap-icons/font/bootstrap-icons.css";
  */
 function showToast(text = "", duration = 3000, preset = null, { iconClassName = undefined, background = undefined, border = undefined, fontColor = undefined } = {}) {
     let styleToApply = { iconClassName, background, border, fontColor };
-    Object.keys(styleToApply).forEach(key => styleToApply[key] === undefined && delete styleToApply[key]);  // remove undefined style
+    Object.keys(styleToApply).forEach((key) => styleToApply[key] === undefined && delete styleToApply[key]); // remove undefined style
     if (preset) {
         let presetStyle = {};
         switch (preset) {
-            case 'primary':
+            case "primary":
                 presetStyle = {
-                    iconClassName: 'bi-info-lg',
-                    background: '#cfe2ff',
-                    border: '1px solid #9ec5fe',
-                    fontColor: '#0a58ca'
-                }
+                    iconClassName: "bi-info-lg",
+                    background: "#cfe2ff",
+                    border: "1px solid #9ec5fe",
+                    fontColor: "#0a58ca"
+                };
                 break;
-            case 'success':
+            case "success":
                 presetStyle = {
-                    iconClassName: 'bi-check-lg',
-                    background: '#d1e7dd',
-                    border: '1px solid #a3cfbb',
-                    fontColor: '#146c43'
-                }
+                    iconClassName: "bi-check-lg",
+                    background: "#d1e7dd",
+                    border: "1px solid #a3cfbb",
+                    fontColor: "#146c43"
+                };
                 break;
-            case 'warning':
+            case "warning":
                 presetStyle = {
-                    iconClassName: 'bi-exclamation-lg',
-                    background: '#ffe69c',
-                    border: '1px solid #ffd746',
-                    fontColor: '#997404'
-                }
+                    iconClassName: "bi-exclamation-lg",
+                    background: "#ffe69c",
+                    border: "1px solid #ffd746",
+                    fontColor: "#997404"
+                };
                 break;
-            case 'danger':
+            case "danger":
                 presetStyle = {
-                    iconClassName: 'bi-x-circle',
-                    background: '#f8d7da',
-                    border: '1px solid #f1aeb5',
-                    fontColor: '#b02a37'
-                }
+                    iconClassName: "bi-x-circle",
+                    background: "#f8d7da",
+                    border: "1px solid #f1aeb5",
+                    fontColor: "#b02a37"
+                };
                 break;
         }
         styleToApply = { ...presetStyle, ...styleToApply };
@@ -59,20 +59,19 @@ function showToast(text = "", duration = 3000, preset = null, { iconClassName = 
         style: {
             color: styleToApply.fontColor,
             background: styleToApply.background,
-            fontSize: '1.1em',
-            borderRadius: '6px',
+            fontSize: "1.1em",
+            borderRadius: "6px",
             border: styleToApply.border,
-            boxShadow: 'rgb(0 0 0 / 10%) 2px -2px 5px 2px',
+            boxShadow: "rgb(0 0 0 / 10%) 2px -2px 5px 2px"
         },
-        avatar: styleToApply.iconClassName,
+        avatar: styleToApply.iconClassName
     }).showToast();
 }
 
-showToast("I just want to notify you.", -1, 'primary');
+showToast("I just want to notify you.", -1, "primary");
 
-showToast("Hello World!", -1, 'success');
-showToast("Hello World!", -1, 'success', { iconClassName: 'bi-heart' });
+showToast("Hello World!", -1, "success");
+showToast("Hello World!", -1, "success", { iconClassName: "bi-heart" });
 
-showToast("Ow man, what are you doing? What are you doing? are you doing? you doing? doing? ing?", -1, 'warning');
-showToast("Get out of there quickly!", -1, 'danger');
-
+showToast("Ow man, what are you doing? What are you doing? are you doing? you doing? doing? ing?", -1, "warning");
+showToast("Get out of there quickly!", -1, "danger");

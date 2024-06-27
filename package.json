@@ -9,21 +9,24 @@
     "type": "git",
     "url": "https://github.com/Paper-Folding/toastify.git"
   },
-  "version": "1.12.8",
+  "version": "1.12.9",
   "type": "module",
   "scripts": {
     "dev": "vite --config ./config/vite.config.dev.js",
-    "build-lib": "vite build --config ./config/vite.config.build-lib.js",
+    "build-lib": "prettier . --write && vite build --config ./config/vite.config.build-lib.js",
     "build-example": "vite build --config ./config/vite.config.build-example.js"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
     "bootstrap-icons": "^1.10.3",
+    "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
-    "vite": "^5.0.7"
+    "prettier": "^3.3.2",
+    "vite": "^5.3.1"
   },
   "files": [
-    "src/*",
-    "dist/*"
-  ]
+    "src/**/*",
+    "dist/**/*"
+  ],
+  "packageManager": "yarn@4.3.1"
 }

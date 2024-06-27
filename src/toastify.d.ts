@@ -36,8 +36,8 @@ declare namespace StartToastifyInstance {
         /**
          * Invoked when the toast is dismissed
          */
-        callback?: (() => void);
-        onClick?: (() => void);
+        callback?: () => void;
+        onClick?: () => void;
         offset?: Offset;
         /**
          * Toggle the default behavior of escaping HTML markup
