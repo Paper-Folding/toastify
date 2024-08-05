@@ -17,7 +17,7 @@
     "build-example": "vite build --config ./config/vite.config.build-example.js"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
+    "autoprefixer": "^10.4.20",
     "bootstrap-icons": "^1.10.3",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
