@@ -72,8 +72,8 @@ declare class Toastify {
      */
     hideToast(): void;
 }
-declare function StartToastifyInstance(options?: Toastify.Options): Toastify;
+declare function StartToastifyInstance(options?: StartToastifyInstance.Options): Toastify;
 
 export as namespace Toastify;
 
-export = StartToastifyInstance;
+export default StartToastifyInstance;
