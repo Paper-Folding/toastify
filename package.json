@@ -17,16 +17,16 @@
     "build-example": "vite build --config ./config/vite.config.build-example.js"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "bootstrap-icons": "^1.11.3",
-    "postcss": "^8.4.47",
-    "postcss-cli": "^11.0.0",
-    "prettier": "^3.3.3",
-    "vite": "^5.4.6"
+    "autoprefixer": "^10.4.22",
+    "bootstrap-icons": "^1.13.1",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "prettier": "^3.6.2",
+    "vite": "^7.2.2"
   },
   "files": [
     "src/**/*",
     "dist/**/*"
   ],
-  "packageManager": "yarn@4.5.0"
+  "packageManager": "yarn@4.11.0"
 }
